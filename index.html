@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Поиск физического лица</title>
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        background: #c0c0c0;
+        font-family: MS Sans Serif, Arial, sans-serif;
+        font-size: 11px;
+        color: black;
+    }
+    .form {
+        width: 980px;
+        background: #c0c0c0;
+        padding: 10px;
+        border: 2px solid #c0c0c0;
+    }
+    table {
+        border-collapse: separate;
+        border-spacing: 6px 3px;
+    }
+    td {
+        padding: 0;
+    }
+    .label {
+        text-align: right;
+        padding-right: 8px;
+        white-space: nowrap;
+        font-size: 11px;
+    }
+    input[type=text] {
+        height: 20px;
+        padding: 0 3px;
+        border: 1px solid #7b7b7b;
+        border-top-color: #dfdfdf;
+        border-left-color: #dfdfdf;
+        background: white;
+        font-family: MS Sans Serif, Arial, sans-serif;
+        font-size: 11px;
+        box-shadow: inset 1px 1px 2px #dfdfdf;
+    }
+    .w100 { width: 100px; }
+    .w150 { width: 150px; }
+    .w200 { width: 200px; }
+    .w300 { width: 300px; }
+    .w500 { width: 500px; }
+</style>
+</head>
+<body>
+
+<div class="form">
+
+<table>
+  <tr>
+    <td class="label">Документ-основание: входящий (рег.) №</td>
+    <td><input type="text" class="w300"></td>
+
+    <td class="label">Дата регистрации</td>
+    <td>
+        <input type="text" class="w100" style="width:30px" placeholder="дд"> .
+        <input type="text" class="w100" style="width:30px" placeholder="мм"> .
+        <input type="text" class="w100" style="width:50px" placeholder="гггг">
+    </td>
+    <td>(дд.мм.гггг)</td>
+</tr>
+
+
+    <tr>
+        <td></td>
+        <td colspan="4"><label><input type="checkbox" style="vertical-align:middle"> Розыск прекращен</label></td>
+    </tr>
+
+    <tr><td colspan="5" height="10"></td></tr>
+
+    <tr>
+        <td class="label">Фамилия</td>
+        <td><input type="text" class="w300"></td>
+        <td class="label">Имя</td>
+        <td colspan="2"><input type="text" class="w300"></td>
+    </tr>
+
+    <tr>
+        <td class="label">Отчество</td>
+        <td colspan="4"><input type="text" class="w500"></td>
+    </tr>
+
+    <tr><td colspan="5" height="8"></td></tr>
+
+    <tr>
+        <td class="label">Дата рождения с</td>
+        <td><input type="text" class="w100" placeholder="дд.мм.гггг"></td>
+        <td class="label">по</td>
+        <td><input type="text" class="w100" placeholder="дд.мм.гггг"></td>
+        <td><label><input type="checkbox" style="vertical-align:middle"> диапазон</label></td>
+    </tr>
+
+    <tr><td colspan="5" height="12"></td></tr>
+
+    <tr>
+        <td class="label">Фамилия (лат.)</td>
+        <td><input type="text" class="w300"></td>
+        <td class="label">Имя (лат.)</td>
+        <td><input type="text" class="w300"></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="label">Отчество (лат.)</td>
+        <td colspan="4"><input type="text" class="w500"></td>
+    </tr>
+</table>
+
+</div>
+
+</body>
+</html>
