@@ -44,7 +44,7 @@ def clear_text_field_improved():
     try:
         # Выделяем всё
         pyautogui.hotkey('ctrl', 'a')
-        safe_sleep(0.04)
+        safe_sleep(0.03)
         # Удаляем содержимое несколькими вариантами (на случай если одно не сработает)
         pyautogui.press('backspace')
         safe_sleep(0.02)
